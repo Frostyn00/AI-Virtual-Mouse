@@ -98,7 +98,7 @@ pip install opencv-python mediapipe autopy numpy
 ---
 
 ## Screenshots 📸
-*(Add screenshots or GIFs of your project in action.)*
+![Project Screenshot](images/image.png)
 
 ---
 
