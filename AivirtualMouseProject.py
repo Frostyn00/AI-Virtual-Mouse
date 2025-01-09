@@ -27,15 +27,15 @@ while True:
     lmList, bbox = detector.findPosition(img)
 
     if len(lmList) != 0:
-        x1, y1 = lmList[8][1:]  # Index finger tip
-        x2, y2 = lmList[12][1:]  # Middle finger tip
-        x3, y3 = lmList[4][1:]   # Thumb tip
-        x4, y4 = lmList[20][1:]  # Pinky tip
+        x1, y1 = lmList[8][1:]
+        x2, y2 = lmList[12][1:]
+        x3, y3 = lmList[4][1:]
+        x4, y4 = lmList[20][1:]
 
         fingers = detector.fingersUp()
 
         if len(fingers) >= 5:
-            if fingers[4] == 1 and not rightClickDone:  # Serçe parmak kalkık
+            if fingers[4] == 1 and not rightClickDone:
                 pyautogui.rightClick()
                 rightClickDone = True
 
@@ -54,7 +54,7 @@ while True:
                     pyautogui.click()
                     clickDone = True
 
-            if fingers[1] == 1 and fingers[0] == 1:  # Thumb and Index finger up for scroll
+            if fingers[1] == 1 and fingers[0] == 1:
                 length, img, lineInfo = detector.findDistance(8, 4, img)
                 if length <= 100:
                     pyautogui.scroll(100)
