@@ -118,7 +118,6 @@ pip install opencv-python mediapipe autopy numpy pyautogui cv2
 ## Screenshots 📸
 ![Project Screenshot](images/image.png)
 ![Project Screenshot](images/image1.png)
-![Project Screenshot](images/image2.png)
 
 ---
 
