@@ -7,9 +7,9 @@ This project implements an AI-powered virtual mouse using Python, OpenCV, Mediap
 
 ## Changelog 🚀
 ### v2.0
-- **Right-Click Disabled**: Right-click functionality with the pinky finger was removed.
+- **Added Right-Click**: Right-click functionality with the pinky finger was removed.
 - **Multiple Click Issue Fixed**: The issue of continuous clicking was fixed, ensuring only one click occurs when intended.
-- **Scroll Functionality**: Scrolling added. Scroll down when the thumb is open and far from the index finger, and scroll up when the thumb is open and close to the index finger.
+- **Added Scroll Functionality**: Scrolling added. Scroll down when the thumb is open and far from the index finger, and scroll up when the thumb is open and close to the index finger.
 - **Code Optimization**: Various optimizations were made to improve the efficiency and performance of the program.
 
 ---
