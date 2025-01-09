@@ -1,6 +1,16 @@
+
 # AI Virtual Mouse Project 🖱️
 
 This project implements an AI-powered virtual mouse using Python, OpenCV, Mediapipe, and Autopy. The application tracks your hand gestures via a webcam and allows you to control the mouse cursor and perform click actions without touching a physical mouse.
+
+---
+
+## Changelog 🚀
+### v2.0
+- **Right-Click Disabled**: Right-click functionality with the pinky finger was removed.
+- **Multiple Click Issue Fixed**: The issue of continuous clicking was fixed, ensuring only one click occurs when intended.
+- **Scroll Functionality**: Scrolling added. Scroll down when the thumb is open and far from the index finger, and scroll up when the thumb is open and close to the index finger.
+- **Code Optimization**: Various optimizations were made to improve the efficiency and performance of the program.
 
 ---
 
@@ -23,10 +33,12 @@ Install the following Python modules before running the project:
 - `mediapipe`
 - `autopy`
 - `numpy`
+- `pyautogui`
+- `cv2`
 
 You can install them using pip:
 ```bash
-pip install opencv-python mediapipe autopy numpy
+pip install opencv-python mediapipe autopy numpy pyautogui cv2
 ```
 
 ---
@@ -53,6 +65,10 @@ pip install opencv-python mediapipe autopy numpy
 4. **Click Detection**:
    - If the distance between the index and middle fingertips is less than a threshold, a mouse click is triggered.
 
+5. **Scroll Detection**:
+   - Thumb open and far from index finger: Scroll down.
+   - Thumb open and close to index finger: Scroll up.
+
 ---
 
 ## Usage 🚀
@@ -72,6 +88,8 @@ pip install opencv-python mediapipe autopy numpy
 4. Use the following gestures:
    - **Index Finger Up**: Move the cursor.
    - **Index and Middle Fingers Up**: Simulate a mouse click by bringing the fingers close together.
+   - **Thumb Open and Far from Index Finger**: Scroll down.
+   - **Thumb Open and Close to Index Finger**: Scroll up.
 
 ---
 
@@ -99,6 +117,8 @@ pip install opencv-python mediapipe autopy numpy
 
 ## Screenshots 📸
 ![Project Screenshot](images/image.png)
+![Project Screenshot](images/image1.png)
+![Project Screenshot](images/image2.png)
 
 ---
 
