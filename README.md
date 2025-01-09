@@ -139,6 +139,3 @@ pip install opencv-python mediapipe autopy numpy pyautogui cv2
 This project is open source and available under the MIT License.
 
 ---
-
-### Made by:
-Abdulkadir Halici
